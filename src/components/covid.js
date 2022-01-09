@@ -3,6 +3,9 @@ const Covid = () => {
     const [data, setData] = useState([]);
     const [selectedState, setSelectedState] = useState({});
     const [sortBy, setSortBy] = useState("Total");
+
+
+    // get covid data
     const getCovidData = async () => {
         try {
             const resp = await fetch("https://data.covid19india.org/data.json");
